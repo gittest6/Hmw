@@ -6,25 +6,19 @@ using Hmw.Reflection;
 using Newtonsoft.Json;
 
 var nTimes = 100000;
-float avgSer, avgDeser;
 
-Console.WriteLine ($"Количество замеров: {nTimes} итераций\n");
 
-Console.WriteLine ("Custom:");
-(avgSer, avgDeser) = Test (nTimes, CustomSerialize, customDeserialize);
 Console.WriteLine ($"""
-Время на сериализацию = {avgSer:F2} мкс
-Время на десериализацию = {avgDeser:F2} мкс
+Количество замеров: {nTimes} итераций
+
+Custom:
+{Test (nTimes, CustomSerialize, customDeserialize)}
+
+Newtonsoft.Json:
+{Test (nTimes, NewtonsoftSerialize, NewtonsoftDeserialize)}
 """);
 
-Console.WriteLine ("\nNewtonsoft:");
-(avgSer, avgDeser) = Test (nTimes, NewtonsoftSerialize, NewtonsoftDeserialize);
-Console.WriteLine ($"""
-Время на сериализацию = {avgSer:F2} мкс
-Время на десериализацию = {avgDeser:F2} мкс
-""");
-
-(float, float) Test (int nTimes, Func<F, string> funcSer, Func<string, F> funcDeser)
+string Test (int nTimes, Func<F, string> funcSer, Func<string, F> funcDeser)
 {
 	var f = F.Get ();
 	string s = null;
@@ -47,7 +41,11 @@ Console.WriteLine ($"""
 		totalTimeDeser += sw.Elapsed.Microseconds;
 	}
 
-	return (totalTimeSer / (float) nTimes, totalTimeDeser / (float) nTimes);
+	float avgSer = (float) totalTimeSer / nTimes, avgDeser = (float) totalTimeDeser / nTimes;
+	return $"""
+Время на сериализацию = {avgSer:F2} мкс
+Время на десериализацию = {avgDeser:F2} мкс
+""";
 }
 
 string CustomSerialize (F f)
