@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
+namespace Hmw.Parallel2;
+
 public class ArrSum
 {
     [Params (100000, 1000000, 10000000)]
