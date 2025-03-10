@@ -3,22 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessNum", "GuessNum\GuessNum.csproj", "{22213405-F419-4AEA-8010-CBFECFDBEE0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hmw.GuessNum", "GuessNum\Hmw.GuessNum.csproj", "{22213405-F419-4AEA-8010-CBFECFDBEE0B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBDC1E6F-E626-493A-B382-C83A576CE6D5}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csproj", "{C9676684-F33A-497C-90CE-6FB28FE1E1E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hmw.Events", "Events\Hmw.Events.csproj", "{C9676684-F33A-497C-90CE-6FB28FE1E1E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Reflection.csproj", "{8D917118-52BC-464F-B4D5-EF0B122AD396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hmw.Reflection", "Reflection\Hmw.Reflection.csproj", "{8D917118-52BC-464F-B4D5-EF0B122AD396}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parallel", "Parallel\Parallel.csproj", "{75C56E60-A23E-4F1D-9ABB-B18ABC859DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hmw.Parallel", "Parallel\Hmw.Parallel.csproj", "{75C56E60-A23E-4F1D-9ABB-B18ABC859DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel2", "Parallel2\Parallel2.csproj", "{20983242-B057-4D9F-8E00-FAFA731B2801}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hmw.Parallel2", "Parallel2\Hmw.Parallel2.csproj", "{20983242-B057-4D9F-8E00-FAFA731B2801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{2EF4F864-73F0-477E-BEE8-E7E06B1D6F18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hmw.Prototype", "Prototype\Hmw.Prototype.csproj", "{2EF4F864-73F0-477E-BEE8-E7E06B1D6F18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
